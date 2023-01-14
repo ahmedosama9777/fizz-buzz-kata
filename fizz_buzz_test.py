@@ -16,3 +16,7 @@ class TestFizzBuzz(TestCase):
     
     def test_neither_multiple_of_three_nor_five(self):
         self.assertEqual(self.fizz_buzz.run(1), "1")
+    
+    def test_input_less_than_range(self):
+        with self.assertRaises(ValueError):
+            self.fizz_buzz.run(0)
