@@ -2,7 +2,8 @@ from unittest import TestCase
 from fizz_buzz import FizzBuzz
 
 class TestFizzBuzz(TestCase):
-    def test_create_fizz_buzz(self):
-        fizz_buzz = FizzBuzz()
-        self.assertEqual(fizz_buzz.run(), "0")
+    def setUp(self) -> None:
+        self.fizz_buzz = FizzBuzz()
     
+    def test_multiples_of_three(self):
+        self.assertEqual(self.fizz_buzz.run(3), "Fizz")

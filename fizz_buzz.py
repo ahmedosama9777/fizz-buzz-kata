@@ -1,3 +1,4 @@
 class FizzBuzz():
-    def run(self):
-        return "0"
+    def run(self, number: int) -> str:
+        if number % 3 == 0:
+            return "Fizz"
