@@ -6,5 +6,7 @@ class FizzBuzz():
             result += "Fizz"
         if number % 5 == 0:
             result += "Buzz"
+        if result == "":
+            result += str(number)
         
         return result

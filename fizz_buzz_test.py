@@ -13,3 +13,6 @@ class TestFizzBuzz(TestCase):
     
     def test_multiple_of_five_and_three(self):
         self.assertEqual(self.fizz_buzz.run(45), "FizzBuzz")
+    
+    def test_neither_multiple_of_three_nor_five(self):
+        self.assertEqual(self.fizz_buzz.run(1), "1")
