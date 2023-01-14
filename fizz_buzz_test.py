@@ -7,3 +7,6 @@ class TestFizzBuzz(TestCase):
     
     def test_multiples_of_three(self):
         self.assertEqual(self.fizz_buzz.run(3), "Fizz")
+    
+    def test_multiples_of_five(self):
+        self.assertEqual(self.fizz_buzz.run(5), "Buzz")
